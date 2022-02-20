@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+
+    <script>
+      
+      const name = [
+          "andi",
+          "bujang",
+          "riski",
+          "ipung",
+          "imam",
+      ]
+
+      const [temen1,temen2,temen3,... other] = name
+
+      console.info(other)
+
+      const biodata = {
+          name: "Adam Muhammad Galib",
+          age : 24,
+          country : "indonesia",
+          status : "single",
+          hobi : {
+              hobi1 : "Sepak Bola",
+              hobi2 : "Game",
+              hobi3 : "Ngewe",
+          }
+      }
+
+      const {... all} = biodata
+
+      console.table(all)
+      alert(biodata.hobi.hobi1)
+
+
+    </script>
+    
+</body>
+</html>

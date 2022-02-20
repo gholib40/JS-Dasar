@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return</title>
+</head>
+<body>
+
+    <script>
+        // function sayHello(fristName,lastName) {
+        //     const all = `hello ${fristName} ${lastName}`
+        //     return all
+        // }
+
+
+        // let output = sayHello("adam","galib")
+        // alert(output)
+
+        // function nilai(angka){
+        //     if(angka >= 90){
+        //         return "AA"
+        //     }else if(angka >= 80){
+        //         return "A"
+        //     }else if(angka >= 70){
+        //         return "B"
+        //     }else if(angka >=55){
+        //         return "C"
+        //     }else {
+        //         return "D"
+        //     }
+        // }
+
+        // let hasil = nilai(20)
+        // alert(hasil)
+
+
+        function arayStop(array,seachValue){
+            for(const value of array){
+                if(value === seachValue){
+                    return true
+                }
+            }
+            return false
+            
+        }
+
+        let search = arayStop([1,2,3,4,5,6,7,8],10)
+        alert(search)
+    </script>
+    
+</body>
+</html>
